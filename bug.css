@@ -1,0 +1,10 @@
+/* This CSS causes unexpected behavior in older browsers due to the use of the ":has()" pseudo-class.  It targets elements containing a child with a specific class, but this feature has limited support in older browsers.  */
+
+.parent:has(.child) {
+  background-color: lightblue;
+}
+
+/* This code targets elements with a class '.error' and adds a red border. The error is that the class selector is not properly specified */
+.error {
+  border: 2px solid red; 
+}
